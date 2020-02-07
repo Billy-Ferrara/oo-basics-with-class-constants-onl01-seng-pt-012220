@@ -5,7 +5,9 @@ class Shoe
 BRANDS = []
 
   def initialize(brand)
-    @brand = brand
+    def brand=(brand)
+  @brand=brand
+  if (BRANDS.include?(@brand))
   end
 
   def cobble
